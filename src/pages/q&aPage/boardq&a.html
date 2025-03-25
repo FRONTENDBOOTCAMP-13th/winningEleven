@@ -3,51 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>q&a</title>
-    <link rel="icon" href="/vite.svg" />
-    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <title>Q&A</title>
+    <link rel="icon" href="/favicon-16x16.png" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
     <div class="layout scrollbar-hide">
       <!-- 상단바 -->
-      <div
-        class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
-      >
+      <div class="sticky top-0 z-50 bg-white">
         <div
-          class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+          class="px-[24px] pt-[8px] pb-[4px] bg-white inline-flex justify-end items-center gap-44"
         >
-          2:26
-        </div>
-        <div class="flex justify-center items-center">
-          <div class="w-6 h-4 relative">
-            <div
-              class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
-            ></div>
+          <div
+            class="text-center justify-center text-black text-sm font-semibold font-['Pretendard']"
+          >
+            2:26
           </div>
-          <div class="flex justify-center items-center gap-0.5">
-            <div class="w-6 h-6 relative">
+          <div class="flex justify-center items-center">
+            <div class="w-6 h-4 relative">
               <div
-                class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+                class="w-3.5 h-4 left-[10px] absolute bg-cover bg-[url('./assets/celluar.svg')]"
               ></div>
             </div>
-            <div class="w-6 h-5 relative">
-              <div
-                class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
-              ></div>
+            <div class="flex justify-center items-center gap-0.5">
+              <div class="w-6 h-6 relative">
+                <div
+                  class="w-6 h-6 absolute bg-cover bg-[url('./assets/lte.svg')]"
+                ></div>
+              </div>
+              <div class="w-6 h-5 relative">
+                <div
+                  class="w-5 h-5 absolute bg-cover bg-[url('./assets/battery.svg')]"
+                ></div>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
+
       <!-- 상단 버튼 -->
       <header
         class="grid grid-cols-[auto_auto_1fr] items-center w-[320px] h-[34px]"
       >
         <button
           onclick="location.href='/src/pages/q&aPage/chatList.html'"
-          aria-label="되로가기 버튼"
+          aria-label="뒤로가기"
           type="button"
           class="flex items-center pl-2 w-8 cursor-pointer"
         >
@@ -65,9 +72,10 @@
             />
           </svg>
         </button>
+
         <button
           onclick="location.href='/src/pages/mainpage/mainPage.html'"
-          aria-label="홈 버튼"
+          aria-label="홈으로 돌아가기"
           type="button"
           class="flex justify-center w-8 cursor-pointer"
         >
@@ -84,8 +92,9 @@
             />
           </svg>
         </button>
+
         <nav class="flex justify-self-end gap-2">
-          <button aria-label="공유 버튼" type="button" class="cursor-pointer">
+          <button aria-label="공유하기" type="button" class="cursor-pointer">
             <svg
               width="20"
               height="20"
@@ -99,11 +108,7 @@
               />
             </svg>
           </button>
-          <button
-            aria-label="더보기 버튼"
-            type="button"
-            class="pr-2 cursor-pointer"
-          >
+          <button aria-label="더보기" type="button" class="pr-2 cursor-pointer">
             <svg
               aria-hidden="true"
               width="20"
@@ -136,8 +141,8 @@
           class="bg-[var(--color-content-secondary)] w-[30px] h-[30px] rounded-full overflow-hidden"
         >
           <img
-            src="/public/img/whatNono.webp"
-            alt=""
+            src="/img/whatNono.webp"
+            alt="프로필 사진"
             class="w-full h-full object-cover"
           />
         </div>
@@ -166,15 +171,15 @@
         </div>
 
         <img
-          src="/public/img/whatNono.webp"
-          alt=""
+          src="/img/whatNono.webp"
+          alt="어?금지 사진"
           class="bg-[var(--color-content-secondary)] w-full h-[350px] mb-1 rounded-xl overflow-hidden"
         />
       </div>
 
       <!-- 위치, 장소, 댓글 입력창, 이모티콘 버튼 -->
       <div class="flex w-[320px] px-3 mt-2 items-center gap-1">
-        <button aria-label="사진 추가 버튼" class="p-1 cursor-pointer">
+        <button aria-label="사진 아이콘" class="p-1 cursor-pointer">
           <svg
             aria-hidden="true"
             width="20"
@@ -189,7 +194,7 @@
             />
           </svg>
         </button>
-        <button aria-label="위치 추가 버튼" class="p-1 cursor-pointer">
+        <button aria-label="위치 추가하기" class="p-1 cursor-pointer">
           <svg
             aria-hidden="true"
             width="20"
@@ -212,7 +217,7 @@
             placeholder="댓글을 입력해주세요."
             class="text-xs bg-transparent flex-1 focus:outline-none focus:ring-0 placeholder-gray-400 p-2"
           />
-          <button aria-label="이모티콘 버튼" class="pr-2 cursor-pointer">
+          <button aria-label="이모티콘" class="pr-2 cursor-pointer">
             <svg
               aria-hidden="true"
               width="17.917"
@@ -313,7 +318,7 @@
 
           <!-- 배지 이미지 (가운데 배치) -->
           <div class="absolute inset-0 flex items-center justify-center z-10">
-            <img src="/img/badge.png" alt="badge" class="w-[36px]" />
+            <img src="/img/badge.png" alt="배지" class="w-[36px]" />
           </div>
         </div>
       </article>
@@ -321,8 +326,8 @@
       <div
         class="text-xs text-[var(--color-content-tertiary)] text-center w-[320px] mt-30 mb-30"
       >
-        <p class="">아직 댓글이 없어요.</p>
-        <p class="">가장 먼저 댓글을 남겨보세요.</p>
+        <p>아직 댓글이 없어요.</p>
+        <p>가장 먼저 댓글을 남겨보세요.</p>
       </div>
     </div>
   </body>

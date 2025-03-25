@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>q&a</title>
-    <link rel="icon" href="/vite.svg" />
+    <title>글쓰기 - Q&A</title>
+    <link rel="icon" href="/favicon-16x16.png" />
     <link
       rel="preload"
       as="font"
@@ -52,7 +52,7 @@
       >
         <button
           onclick="location.href='/src/pages/q&aPage/q&a.html'"
-          aria-label="그만하기 버튼"
+          aria-label="글쓰기 취소하기"
           type="button"
           class="flex items-center pl-3 w-8 cursor-pointer"
         >
@@ -78,6 +78,7 @@
         <nav class="flex gap-2 pt-1">
           <button
             onclick="location.href='/src/pages/q&aPage/boardq&a.html'"
+            aria-label="글쓰기 완료하기"
             type="button"
             class="pr-3 cursor-pointer"
           >
@@ -103,7 +104,7 @@
         class="w-[320px] grid grid-cols-[1fr_auto] py-3 px-3 border-b-1 border-gray-400 items-center"
       >
         <h2 class="text-[14px] font-bold text-start-center">FRONTEND</h2>
-        <button aria-label="더보기 버튼" class="p-1 cursor-pointer">
+        <button aria-label="더보기" class="p-1 cursor-pointer">
           <svg
             aria-hidden="true"
             width="16"
@@ -130,7 +131,7 @@
             >중고거래 관련, 명예훼손, 광고/홍보 목적의 글은 올리실 수
             없어요.</span
           >
-          <a href="/" class="underline">Q&A글쓰기 운영정책</a>
+          <a href="#" class="underline">Q&A글쓰기 운영정책</a>
         </p>
       </div>
 
@@ -149,9 +150,12 @@
       </div>
 
       <!-- 하단 사진, 장소, 키보드 버튼 -->
-      <div class="w-[320px] grid grid-cols-[auto_auto_1fr]">
+      <div class="w-[320px] grid grid-cols-[auto_auto_1fr] pt-1">
         <div class="justify-self-center py-2 pl-3">
-          <button class="flex items-center cursor-pointer gap-1">
+          <button
+            aria-label="사진 추가하기"
+            class="flex items-center cursor-pointer gap-1"
+          >
             <svg
               aria-hidden="true"
               width="16"
@@ -165,13 +169,13 @@
                 fill="black"
               />
             </svg>
-            <p>사진</p>
+            <span class="text-[14px]">사진</span>
           </button>
         </div>
 
         <div class="justify-self-center py-2 px-3">
           <button
-            aria-label="위치 아이콘"
+            aria-label="위치 추가하기"
             class="flex gap-1 cursor-pointer items-center"
           >
             <svg
@@ -187,12 +191,12 @@
                 fill="black"
               />
             </svg>
-            <p>장소</p>
+            <span class="text-[14px]">장소</span>
           </button>
         </div>
 
         <button
-          aria-label="키보트 버튼"
+          aria-label="키보드"
           class="justify-self-end cursor-pointer py-2 px-4"
         >
           <svg
